@@ -1,0 +1,36 @@
+/*
+** EPITECH PROJECT, 2018
+** little lib
+** File description:
+** little lib
+*/
+
+#ifndef include_every_function_
+#define include_every_function_
+#define EXIT_MALLOC   84
+#define EXIT_READ     84
+#define SYNTAX_ERROR_MSG "syntax error"
+#define ERROR_MSG        "error"
+#include <stdlib.h>
+#include <stdio.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+int my_strlen(char *str);
+void my_putstr(char const *str);
+int my_put_nbr(int nb);
+void my_putchar(char c);
+char *my_revstr(char *str);
+int number_of_char(char *buffer);
+char *convert_in_int(char *buffer);
+int add_minor(int n1, int n2, int n3);
+char *add_converter(char *map, char *old_map);
+char *cut_begin(char *buffer);
+int number_of_return(char *buffer);
+char **put_buffer_in_map(char *buffer);
+char **last_step(char **map);
+char ** final_map(char **map, char *buffer);
+char *change_number_to_char(char *map);
+#endif
